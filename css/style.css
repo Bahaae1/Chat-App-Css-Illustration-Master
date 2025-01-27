@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Rubik", serif;
+    background-color: hsl(270, 20%, 96%) ;
+    position: relative;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 29%;
+    height: 92%;
+    background-color: hsl(264, 100%, 61%);
+    top: -150px;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 500px;
+    z-index: -1;
+}
+body::after{
+    content: "";
+    position: absolute;
+    width: 29%;
+    height: 100%;
+    background-color: hsl(270deg 13.95% 90.11%);
+    bottom: -150px;
+    right: 0;
+    border-top-left-radius: 100%;
+    z-index: -1;
+}
+.container{
+    width: 70%;
+    margin: 150px auto;
+}
+.container .section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.app{
+    width: 400px;
+    border-radius: 45px;
+    padding-bottom: 10px;
+    background-color: hsl(270, 20%, 96%);
+    border: 20px solid hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 30px 0px hsl(270deg 13.95% 90.11%);
+}
+.app .head-white{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+.app .head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 20px 18px 20px;
+    position: relative;
+    background: linear-gradient( to right , hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    border-radius: 25px 25px 10px 10px;
+    margin-bottom: 18px;
+}
+.app .head::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 25px;
+    background-color: hsl(0, 0%, 100%);
+    left: 20%;
+    top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.app .head i{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.app .head img{
+    width: 40px;
+    border-radius: 50%;
+    border: 2.3px solid hsl(0, 0%, 100%);
+    margin-left: 15px;
+}
+.app .head .head-text-app h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+.app .head .head-text-app span{
+    font-size: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.app .head .icon-dot{
+    position: absolute;
+    right: 7%;
+}
+.app .chat{
+    margin: 10px;
+}
+.app .chat .chat-left{
+    text-align: left;
+    
+}
+.app .chat .chat-left p{
+    width: 200px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(276deg 44.33% 63.51% / 27%);
+    padding: 7px;
+    border-radius: 12px 12px 12px 4px;
+    margin-bottom: 15px;
+}
+.app .chat .chat-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.app .chat .chat-right .images{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 11px 0 15px 0;
+}
+.app .chat .chat-right .images img{
+    width: 60px;
+    border-radius: 13px;
+}
+.app .chat .chat-right p{
+    color: hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 8px;
+    border-radius: 12px 12px 4px 12px;
+    margin-bottom: 15px;
+    width: 208px;
+    
+}
+.app .chat .chat-right .small{
+    width: 136px;
+}
+.app .chat .chat-left .select .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    background: linear-gradient( to right ,  hsl(293, 100%, 63%) , hsl(264, 100%, 61%) );
+    padding: 0 8px;
+    border-radius: 17px 17px 17px 4px;
+    margin-bottom: 15px;
+    height: 55px;
+}
+.app .chat .chat-left .select .sub .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.app .chat .chat-left .select .two-sub {
+    gap: 25px;
+}
+.app .chat .chat-left .select .sub .left span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid hsl(0deg 0% 100% / 41%) ;
+    background-color: hsl(293, 100%, 63%) ;
+}
+.app .chat .chat-left .select .sub .left h3{
+    color: hsl(0, 0%, 100%) ;
+    font-size: 14px;
+    font-weight: normal;
+}
+.app .chat .chat-left .select .sub span{
+    color: hsl(0, 0%, 100%) ;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.app .chat .send-massage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 7px 20px ;
+    border-radius: 30px;
+}
+.app .chat .send-massage span{
+    color: hsl(206, 6%, 79%);
+
+}
+.app .chat .send-massage i{
+    font-size: 16px;
+    background-color: hsl(271, 36%, 24%);
+    padding: 9px 13px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .section-text{
+    width: 390px;
+}
+.container .section-text h2{
+    font-size: 38px;
+    margin-bottom: 32px;
+    color: hsl(271, 36%, 24%);
+}
+.container .section-text p{
+    color: hsl(270, 7%, 64%);
+    line-height: 1.6;
+}
+
+
